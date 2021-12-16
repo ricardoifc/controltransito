@@ -24,13 +24,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppLoginRegister">
         <activity
-            android:name="com.ricardoifc.controltransito.ContravencionesActivity"
+            android:name=".DetectarPlacaActivity"
             android:exported="false" />
         <activity
-            android:name="com.ricardoifc.controltransito.MostrarTodoActivity"
+            android:name=".ContravencionesActivity"
             android:exported="false" />
         <activity
-            android:name="com.ricardoifc.controltransito.FiltradoActivity"
+            android:name=".MostrarTodoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FiltradoActivity"
             android:exported="false" />
 
         <provider
@@ -45,12 +48,6 @@
 
         <activity
             android:name=".FotoradarActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FotoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HomeActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

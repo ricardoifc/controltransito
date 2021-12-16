@@ -20,7 +20,7 @@
         <ListView
             android:id="@+id/listViewCOntravencion"
             android:layout_width="match_parent"
-            android:layout_height="280dp" />
+            android:layout_height="265dp" />
 
         <TextView
             android:id="@+id/tv_datosVehi"

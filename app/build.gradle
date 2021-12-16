@@ -38,7 +38,6 @@ android {
 }
 
 apply plugin: 'com.android.application'
-apply plugin: 'com.google.gms.google-services'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
@@ -56,6 +55,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-auth-ktx'
 
-
+    implementation 'com.google.firebase:firebase-ml-vision:24.0.3'
 
 }
+apply plugin: 'com.google.gms.google-services'

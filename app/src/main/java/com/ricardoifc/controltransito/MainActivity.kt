@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
             val filtradoIntent: Intent = Intent(this,FiltradoActivity::class.java)
             startActivity(filtradoIntent)
         }
-
+        btn_irDetectarPlaca.setOnClickListener(){
+            val detectarPlacaIntent = Intent(this, DetectarPlacaActivity::class.java)
+            startActivity(detectarPlacaIntent)
+        }
     }
 }

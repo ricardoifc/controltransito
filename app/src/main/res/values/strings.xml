@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AppLoginRegister</string>
+    <string name="provider">tv_provider</string>
+    <string name="tv_email">Email</string>
+    <string name="email">Email</string>
+    <string name="provide">Provide</string>
+</resources>

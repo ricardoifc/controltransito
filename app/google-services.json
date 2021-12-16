@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "135364414852",
+    "project_id": "controltransito-30cca",
+    "storage_bucket": "controltransito-30cca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135364414852:android:f370d9c2e5043bdc48e1d1",
+        "android_client_info": {
+          "package_name": "com.ricardoifc.controltransito"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135364414852-h5qqrs0ae997ljjic3chp8c9v68mnq88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_uAv2dRx9O6tftIkSvhV6A-DXTnHr2TU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135364414852-h5qqrs0ae997ljjic3chp8c9v68mnq88.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

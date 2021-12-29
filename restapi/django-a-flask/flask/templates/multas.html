@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Teléfonos - 1</title>
+  </head>
+  <body>
+    <a href='/'>Regresar a inicio</a>
+    <h5>Listado de Casa - {{numero}}</h5>
+
+    {% for e in datos %}
+
+    <ol>
+      <li><b>Placa: </b>{{e['placa']}}</li>
+      <li><b>Vedula: </b>{{e['cedula']}}</li>
+      <li><b>Fecha: </b>{{e['fecha']}}</li>
+      <li><b>Hora: </b>{{e['hora']}}</li>
+      <li><b>Modelo: </b>{{e['modelo']}}</li>
+      <li><b>Nombre: </b>{{e['nombre']}}</li>
+      <li><b>Velocidad: </b>{{e['velocidad']}}</li>
+
+    </ol>
+    <hr>
+    {% endfor%}
+  </body>
+</html>

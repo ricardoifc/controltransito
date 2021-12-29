@@ -1,0 +1,56 @@
+{% extends "master.html" %}
+
+
+{% block title %}
+  Listado de Multas | {{ block.super }}
+{% endblock %}
+
+{% block content %}
+
+
+<table id="tabla_datos">
+
+  <thead>
+  
+    <tr>
+      <th>placa</th>
+      <th>cedula</th>
+      <th>fecha</th>
+      <th>hora </th>
+      <th>modelo</th>
+      <th>nombre</th>
+      <th>velocidad</th>
+
+    </tr>
+  </thead>
+
+
+  {% for e in multas %}
+  <tr> 
+    <td> placa: {{e.placa}} </td>
+    <td> cedula: {{e.cedula}} </td>
+    <td> fecha: {{e.fecha}}</td>
+    <td> hora: {{e.hora}}</td>
+    <td> modelo: {{e.modelo}}</td>
+    <td> nombre: {{e.nombre}}</td>
+    <td> velocidad: {{e.velocidad}}</td>
+
+    <td> <a></a> <br>
+      <a href="{% url 'editar_multa' e.id %}">editar</a><i class="fas fa-eye text-success fa-lg  mr-2"></i><br>
+      <a href="{% url 'eliminar_multa' e.id %}"
+      onclick="return confirm('¿Está seguro de la eliminación?')" >
+      <i class="fas fa-eye text-success fa-lg  mr-2"></i>
+      eliminar</a>
+    </td>
+
+  </tr>
+  {% endfor %}
+</table>
+
+<script type="text/javascript">
+  $(document).ready( function () {
+    $('#tabla_datos').DataTable();
+  });
+</script>
+
+{% endblock %}
